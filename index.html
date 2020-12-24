@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Library</h1>
+  <main id="main">
+    <header>
+      <div>
+        <form id="my-form">
+          <label for="name">Book Title</label>
+          <input type="text" name="name" placeholder="Title of the Book" required autocomplete="off"/>
+          <label for="author">Book Author</label>
+          <input type="text" name="author" placeholder="Author of the Book" required required autocomplete="off"/>
+          <label for="author">Book Description</label>
+          <textarea name="desc" placeholder="A short description of the Book" cols="30" rows="5"></textarea>
+          <label for="author" style="display: flex; align-items: center;">
+            Book Status<input type="checkbox" name="read" />
+          </label>       
+          <button type="submit">Submit</button>
+        </form>
+      </div>      
+    </header>
+
+    <section id="listContainer">
+      <div id="listItems">
+        <div class="listItem" style="display: none;">
+          <p class="title-p">Book Title</p>
+          <p class="author-p">Book Author</p>
+          <p class="desc-p">Book Description</p>
+          <button class="completed">Completed</button>
+          <button class="remove">Remove Book</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
